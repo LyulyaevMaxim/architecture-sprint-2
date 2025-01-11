@@ -17,6 +17,11 @@ docker compose up -d
 ./scripts/mongo-fill.sh
 ```
 
+Проверить успешность заполнения:
+```shell
+./scripts/mongo-test.sh
+```
+
 ## Как проверить
 
 ### Если вы запускаете проект на локальной машине
