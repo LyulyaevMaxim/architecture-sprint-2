@@ -2,16 +2,24 @@
 
 ## Как запустить
 
-Запускаем mongodb и приложение
-
+Поднять приложение и все связанные зависимости:
 ```shell
 docker compose up -d
 ```
 
-Заполняем mongodb данными
-
+Настроить шардирование на базе данных:
 ```shell
-./scripts/mongo-init.sh
+./scripts/mongo-setup.sh
+```
+
+Заполнить базу моковыми данными:
+```shell
+./scripts/mongo-fill.sh
+```
+
+Проверить успешность заполнения:
+```shell
+./scripts/mongo-test.sh
 ```
 
 ## Как проверить
